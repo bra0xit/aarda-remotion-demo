@@ -2,6 +2,9 @@ import React from 'react';
 import { Composition } from 'remotion';
 import { PromoVideo } from './PromoVideo';
 import { Scene2Shift } from './scenes/Scene2Shift';
+import { Scene3Conversation } from './scenes/Scene3Conversation';
+import { Scene4SocialProof } from './scenes/Scene4SocialProof';
+import { Scene5Close } from './scenes/Scene5Close';
 
 // Wrapper for testing Scene 2 Segment A
 const Scene2SegmentA: React.FC = () => <Scene2Shift />;
@@ -47,6 +50,39 @@ export const RemotionRoot: React.FC = () => {
         id="Scene2-Full"
         component={Scene2Shift}
         durationInFrames={720} // 24 seconds (6 sub-scenes at 4s each)
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+
+      {/* Scene 3 (Conversation) - for testing */}
+      <Composition
+        id="Scene3-Conversation"
+        component={Scene3Conversation}
+        durationInFrames={360} // 12 seconds (3 sub-scenes at 4s each)
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+
+      {/* Scene 4 (Social Proof) - for testing */}
+      <Composition
+        id="Scene4-SocialProof"
+        component={Scene4SocialProof}
+        durationInFrames={300} // 10 seconds (2 sub-scenes at 5s each)
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+
+      {/* Scene 5 (Close) - for testing */}
+      <Composition
+        id="Scene5-Close"
+        component={Scene5Close}
+        durationInFrames={180} // 6 seconds (2 sub-scenes at 3s each)
         fps={30}
         width={1080}
         height={1920}

@@ -2,6 +2,9 @@ import React from 'react';
 import { AbsoluteFill, Sequence } from 'remotion';
 import { Scene1Pain } from './scenes/Scene1Pain';
 import { Scene2Shift } from './scenes/Scene2Shift';
+import { Scene3Conversation } from './scenes/Scene3Conversation';
+import { Scene4SocialProof } from './scenes/Scene4SocialProof';
+import { Scene5Close } from './scenes/Scene5Close';
 
 /**
  * AARDA AI Promotional Video
@@ -29,9 +32,20 @@ export const PromoVideo: React.FC = () => {
         <Scene2Shift />
       </Sequence>
 
-      {/* Scene 3: The Conversation - TODO */}
-      {/* Scene 4: Prove It's Real - TODO */}
-      {/* Scene 5: End with Curiosity - TODO */}
+      {/* Scene 3: The Conversation (960-1320 frames = 32-44 seconds) */}
+      <Sequence from={960} durationInFrames={360}>
+        <Scene3Conversation />
+      </Sequence>
+
+      {/* Scene 4: Prove It's Real (1320-1620 frames = 44-54 seconds) */}
+      <Sequence from={1320} durationInFrames={300}>
+        <Scene4SocialProof />
+      </Sequence>
+
+      {/* Scene 5: End with Curiosity (1620-1800 frames = 54-60 seconds) */}
+      <Sequence from={1620} durationInFrames={180}>
+        <Scene5Close />
+      </Sequence>
     </AbsoluteFill>
   );
 };

@@ -1,0 +1,24 @@
+{
+  "name": "remotion-demo",
+  "version": "1.0.0",
+  "description": "Template-based Remotion video creation with themes and components",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle src/index.ts",
+    "upgrade": "remotion upgrade",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": ["remotion", "video", "react", "animation"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.410",
+    "@remotion/cli": "^4.0.410",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.410",
+    "typescript": "^5.9.3"
+  }
+}

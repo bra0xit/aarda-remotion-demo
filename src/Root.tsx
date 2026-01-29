@@ -42,6 +42,17 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{}}
       />
 
+      {/* Scene 2 Full (2.1-2.6) - 24 seconds */}
+      <Composition
+        id="Scene2-Full"
+        component={Scene2Shift}
+        durationInFrames={720} // 24 seconds (6 sub-scenes at 4s each)
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{}}
+      />
+
       {/* 16:9 landscape version */}
       <Composition
         id="AardaPromo-Landscape"

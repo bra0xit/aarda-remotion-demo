@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCurrentFrame, interpolate, Sequence } from 'remotion';
+import { useCurrentFrame, interpolate, Sequence, AbsoluteFill } from 'remotion';
 import {
   FullScreen,
   GlowPulse,
@@ -51,15 +51,7 @@ export const SolutionRevealScene: React.FC<SolutionRevealSceneProps> = ({ orient
       </Sequence>
 
       {/* Content */}
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: 24,
-          zIndex: 10,
-        }}
-      >
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 24, zIndex: 10 }}>
         {/* "What if stories could think?" */}
         <Sequence from={30} durationInFrames={60}>
           <FadeIn delay={0} duration={15}>
@@ -113,7 +105,7 @@ export const SolutionRevealScene: React.FC<SolutionRevealSceneProps> = ({ orient
             </div>
           </FadeIn>
         </Sequence>
-      </div>
+      </AbsoluteFill>
     </FullScreen>
   );
 };

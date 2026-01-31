@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sequence } from 'remotion';
+import { Sequence, AbsoluteFill } from 'remotion';
 import {
   FullScreen,
   GlowPulse,
@@ -42,11 +42,12 @@ export const CTAScene: React.FC<CTASceneProps> = ({ orientation }) => {
       />
 
       {/* Content */}
-      <div
+      <AbsoluteFill
         style={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          justifyContent: 'center',
           gap: orientation === 'portrait' ? 32 : 24,
           zIndex: 10,
         }}
@@ -107,7 +108,7 @@ export const CTAScene: React.FC<CTASceneProps> = ({ orientation }) => {
             </div>
           </FadeIn>
         </Sequence>
-      </div>
+      </AbsoluteFill>
     </FullScreen>
   );
 };

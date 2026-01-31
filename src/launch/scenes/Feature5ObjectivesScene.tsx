@@ -31,6 +31,7 @@ export const Feature5ObjectivesScene: React.FC<Feature5ObjectivesSceneProps> = (
         style={{
           display: 'flex',
           flexDirection: 'column',
+          alignItems: 'center',
           height: '100%',
           justifyContent: 'center',
           gap: 30,

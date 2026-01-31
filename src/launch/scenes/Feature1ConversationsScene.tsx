@@ -37,6 +37,7 @@ export const Feature1ConversationsScene: React.FC<Feature1ConversationsSceneProp
         style={{
           display: 'flex',
           flexDirection: 'column',
+          alignItems: 'center',
           height: '100%',
           justifyContent: 'center',
           gap: 30,

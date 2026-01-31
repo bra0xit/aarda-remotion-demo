@@ -39,6 +39,7 @@ export const Feature2MapsScene: React.FC<Feature2MapsSceneProps> = ({ orientatio
         style={{
           display: 'flex',
           flexDirection: 'column',
+          alignItems: 'center',
           height: '100%',
           justifyContent: 'center',
           gap: 30,

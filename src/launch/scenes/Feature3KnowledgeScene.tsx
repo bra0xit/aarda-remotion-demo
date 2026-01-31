@@ -30,6 +30,7 @@ export const Feature3KnowledgeScene: React.FC<Feature3KnowledgeSceneProps> = ({ 
         style={{
           display: 'flex',
           flexDirection: 'column',
+          alignItems: 'center',
           height: '100%',
           justifyContent: 'center',
           gap: 30,

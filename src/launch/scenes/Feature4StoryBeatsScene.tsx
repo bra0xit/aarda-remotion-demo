@@ -37,6 +37,7 @@ export const Feature4StoryBeatsScene: React.FC<Feature4StoryBeatsSceneProps> = (
         style={{
           display: 'flex',
           flexDirection: 'column',
+          alignItems: 'center',
           height: '100%',
           justifyContent: 'center',
           gap: 30,

@@ -19,7 +19,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="AardaPromo"
         component={PromoVideo}
-        durationInFrames={1800} // 60 seconds at 30fps
+        durationInFrames={2000} // 67 seconds at 30fps
         fps={30}
         width={1080}  // 9:16 vertical
         height={1920}
@@ -30,7 +30,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Scene1-Pain"
         component={PromoVideo}
-        durationInFrames={240} // 8 seconds
+        durationInFrames={440} // 14.7 seconds
         fps={30}
         width={1080}
         height={1920}
@@ -96,7 +96,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="AardaPromo-Landscape"
         component={PromoVideo}
-        durationInFrames={1800}
+        durationInFrames={2000} // 67 seconds at 30fps
         fps={30}
         width={1920}
         height={1080}

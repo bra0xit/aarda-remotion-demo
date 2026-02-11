@@ -8,6 +8,8 @@ import { Scene4SocialProof } from './scenes/Scene4SocialProof';
 import { Scene5Close } from './scenes/Scene5Close';
 import { HavenViceTrailer, HookScene, CharacterMontage, StoryHookScene, StoryBeatsFlash, CloseScene } from './trailers/haven-vice';
 import { AardaLaunchVideo } from './launch';
+import { WorldBuilderOnboarding } from './world-builder-onboarding/WorldBuilderOnboarding';
+import { worldBuilderSchema, mkUltraProps } from './world-builder-onboarding/schema';
 
 // Wrapper for testing Scene 2 Segment A
 const Scene2SegmentA: React.FC = () => <Scene2Shift />;
@@ -246,6 +248,32 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ orientation: 'landscape' as const }}
+      />
+
+      {/* ========== WORLD BUILDER ONBOARDING ========== */}
+
+      {/* World Builder Onboarding - 16:9 landscape (primary, 54s) */}
+      <Composition
+        id="WorldBuilderOnboarding"
+        component={WorldBuilderOnboarding}
+        durationInFrames={1620}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={worldBuilderSchema}
+        defaultProps={mkUltraProps}
+      />
+
+      {/* World Builder Onboarding - 9:16 portrait (social, 54s) */}
+      <Composition
+        id="WorldBuilderOnboarding-Portrait"
+        component={WorldBuilderOnboarding}
+        durationInFrames={1620}
+        fps={30}
+        width={1080}
+        height={1920}
+        schema={worldBuilderSchema}
+        defaultProps={mkUltraProps}
       />
     </>
   );
